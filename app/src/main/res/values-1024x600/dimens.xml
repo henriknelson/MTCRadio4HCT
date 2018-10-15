@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizeb">60px</dimen>
+    <dimen name="sizes">40px</dimen>
+</resources>

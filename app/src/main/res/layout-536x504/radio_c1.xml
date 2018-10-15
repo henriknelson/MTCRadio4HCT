@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.microntek.radio.ui.BtnChannel
+            android:id="@+id/btn_channel1" android:layout_width="match_parent" android:layout_height="37.33dp" android:layout_weight="1" android:layout_marginStart="1px">
+            <include layout="@layout/radio_btnchannel"/>
+        </com.microntek.radio.ui.BtnChannel>
+        <com.microntek.radio.ui.BtnChannel
+            android:id="@+id/btn_channel2" android:layout_width="match_parent" android:layout_height="37.33dp" android:layout_weight="1" android:layout_marginStart="1px">
+            <include layout="@layout/radio_btnchannel"/>
+        </com.microntek.radio.ui.BtnChannel>
+        <com.microntek.radio.ui.BtnChannel
+            android:id="@+id/btn_channel3" android:layout_width="match_parent" android:layout_height="37.33dp" android:layout_weight="1" android:layout_marginStart="1px">
+            <include layout="@layout/radio_btnchannel"/>
+        </com.microntek.radio.ui.BtnChannel>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px">
+        <com.microntek.radio.ui.BtnChannel
+            android:id="@+id/btn_channel4" android:layout_width="match_parent" android:layout_height="37.33dp" android:layout_weight="1" android:layout_marginStart="1px">
+            <include layout="@layout/radio_btnchannel"/>
+        </com.microntek.radio.ui.BtnChannel>
+        <com.microntek.radio.ui.BtnChannel
+            android:id="@+id/btn_channel5" android:layout_width="match_parent" android:layout_height="37.33dp" android:layout_weight="1" android:layout_marginStart="1px">
+            <include layout="@layout/radio_btnchannel"/>
+        </com.microntek.radio.ui.BtnChannel>
+        <com.microntek.radio.ui.BtnChannel
+            android:id="@+id/btn_channel6" android:layout_width="match_parent" android:layout_height="37.33dp" android:layout_weight="1" android:layout_marginStart="1px">
+            <include layout="@layout/radio_btnchannel"/>
+        </com.microntek.radio.ui.BtnChannel>
+    </LinearLayout>
+</LinearLayout>

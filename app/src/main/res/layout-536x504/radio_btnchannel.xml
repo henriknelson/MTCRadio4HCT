@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/btn_channel" android:background="@drawable/rect_btn" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="12.27dp" android:textColor="@drawable/channel_txt" android:gravity="center" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/txt_channel" android:duplicateParentState="true" android:layout_width="52px" android:layout_height="wrap_content" android:layout_marginTop="2.13dp" android:layout_marginStart="2.13dp"/>
+    <TextView android:textSize="18.67dp" android:textColor="@drawable/channel_txt" android:layout_gravity="center" android:id="@+id/txt_freq" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.87dp" android:singleLine="true"/>
+</FrameLayout>

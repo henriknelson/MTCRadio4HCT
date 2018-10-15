@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mtc="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.microntek.radio.ui.FrequencyBarView
+            android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/freq_bar" android:background="@drawable/bar_fb_bg" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="20px" android:layout_marginBottom="5.33dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="40px" android:layout_weight="1">
+            <RelativeLayout android:layout_gravity="center" android:background="@drawable/middle_bg" android:layout_width="@dimen/freq_adjust_width" android:layout_height="118px">
+                <ImageView android:id="@+id/btn_prev" android:background="@drawable/btn_prev" android:layout_width="42.67dp" android:layout_height="42.67dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="10.67dp"/>
+                <ImageView android:id="@+id/btn_next" android:background="@drawable/btn_next" android:layout_width="42.67dp" android:layout_height="42.67dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.67dp"/>
+                <TextView android:textSize="48dp" android:textColor="#08c198" android:gravity="center" android:id="@+id/freq" android:layout_width="205.87dp" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <TextView android:textSize="18.67dp" android:textColor="@color/color_state" android:id="@+id/freq_band" android:layout_width="49.6dp" android:layout_height="20.8dp" android:layout_marginBottom="18.67dp" android:layout_toRightOf="@+id/btn_prev" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="18.67dp" android:textColor="@color/color_state" android:id="@+id/tv_hz" android:layout_width="49.6dp" android:layout_height="20.8dp" android:layout_marginLeft="220px" android:layout_marginBottom="18.67dp" android:layout_toRightOf="@+id/freq_band" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="12.8dp" android:textColor="@color/color_state" android:id="@+id/st_sw" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.67dp" android:text="@string/st" android:layout_alignParentTop="true" android:layout_marginStart="0dp" android:layout_toEndOf="@+id/btn_prev"/>
+                <TextView android:textSize="12.8dp" android:textColor="@color/color_state" android:id="@+id/loc_sw" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.67dp" android:text="@string/loc" android:layout_alignParentTop="true" android:layout_marginStart="10.67dp" android:layout_toEndOf="@+id/st_sw"/>
+                <ImageView android:id="@+id/stindicator" android:background="@drawable/icon_stereo" android:visibility="invisible" android:layout_width="24.53dp" android:layout_height="13.87dp" android:layout_marginTop="10.67dp" android:layout_alignLeft="@+id/tv_hz" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/rdspart" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <TextView android:textSize="13.87dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tpindicator" android:layout_width="29.87dp" android:layout_height="match_parent" android:text="@string/tp" android:layout_marginStart="48dp"/>
+                <TextView android:textSize="13.87dp" android:textColor="#ffffff" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_pty" android:layout_width="80dp" android:layout_height="match_parent"/>
+                <TextView android:textSize="13.87dp" android:textColor="#ffe1e1e1" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/txt_rt" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="match_parent" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1" android:marqueeRepeatLimit="marquee_forever"/>
+                <TextView android:textStyle="bold" android:textColor="@drawable/btn_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_af" android:background="@drawable/s_btn" android:visibility="visible" android:layout_width="37.33dp" android:layout_height="23.47dp" android:text="@string/af" android:layout_marginStart="10.13dp"/>
+                <TextView android:textStyle="bold" android:textColor="@drawable/btn_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_ta" android:background="@drawable/s_btn" android:visibility="visible" android:layout_width="37.33dp" android:layout_height="23.47dp" android:text="@string/ta" android:layout_marginStart="10.13dp"/>
+                <TextView android:textStyle="bold" android:textColor="@drawable/btn_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_pty" android:background="@drawable/s_btn" android:visibility="visible" android:layout_width="37.33dp" android:layout_height="23.47dp" android:text="@string/pty" android:layout_marginStart="10.13dp" android:layout_marginEnd="42.67dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@+id/viewpagerLayout" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="75.73dp" android:flipInterval="500"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/bottom_bg" android:layout_width="match_parent" android:layout_height="40.53dp" android:layout_marginTop="2px">
+
+            <com.microntek.radio.ui.MyButton
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_bacground"
+                mtc:imgHeight="41.6dp"
+                mtc:imgSrc="@drawable/button_search"
+                mtc:imgWidth="62.93dp" />
+            <com.microntek.radio.ui.MyButton
+                android:id="@+id/btn_st" android:background="@drawable/button_bacground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" mtc:imgWidth="62.93dp" mtc:imgHeight="41.6dp" mtc:imgSrc="@drawable/button_distance"/>
+            <com.microntek.radio.ui.MyButton
+                android:id="@+id/btn_loc" android:background="@drawable/button_bacground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" mtc:imgWidth="62.93dp" mtc:imgHeight="41.6dp" mtc:imgSrc="@drawable/button_voice"/>
+            <com.microntek.radio.ui.MyButton
+                android:id="@+id/btn_am" android:background="@drawable/button_bacground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" mtc:imgWidth="38.4dp" mtc:imgHeight="30.4dp" mtc:imgSrc="@drawable/button_am"/>
+            <com.microntek.radio.ui.MyButton
+                android:id="@+id/btn_fm" android:background="@drawable/button_bacground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" mtc:imgWidth="38.4dp" mtc:imgHeight="30.4dp" mtc:imgSrc="@drawable/button_fm"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/content_list" android:background="@drawable/list_bg" android:visibility="invisible" android:layout_width="122.13dp" android:layout_height="126.93dp" android:layout_marginEnd="41.6dp">
+        <ListView android:id="@+id/list_pty" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.33dp" android:listSelector="@drawable/list_selector" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="#40ffffff" android:dividerHeight="1px" android:paddingStart="1px"/>
+    </FrameLayout>
+    <View android:id="@+id/active" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

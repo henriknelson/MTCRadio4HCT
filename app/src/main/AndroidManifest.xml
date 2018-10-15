@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1"
+    android:versionName="2.4.0"
+    package="com.microntek.radio">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_radio" android:name=".RadioApp">
+        <service android:name=".RadioService" android:persistent="true" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.microntek.radio.radioService"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/RadioTheme" android:label="@string/app_name" android:name=".MainActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions" />
+</manifest>

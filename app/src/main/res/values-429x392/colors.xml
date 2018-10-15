@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_color_s">#33433f</color>
+    <color name="btn_color_p">#5f7442</color>
+    <color name="btn_color_n">#424448</color>
+    <color name="color_middle_sel">#336357</color>
+    <color name="color_middle_nor">#33433f</color>
+    <color name="color_state">#ffe1e1e1</color>
+    <color name="color_main">#31c27c</color>
+    <color name="color_status_bar">#12161c</color>
+</resources>

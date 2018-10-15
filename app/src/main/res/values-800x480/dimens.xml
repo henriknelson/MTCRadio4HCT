@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizeb">50px</dimen>
+    <dimen name="sizes">35px</dimen>
+    <dimen name="freq_adjust_width">482.125dp</dimen>
+</resources>
